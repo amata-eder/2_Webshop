@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KWM Shopping List</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--https://michaelkipp.de/web/jquery.html-->
+</head>
+<body>
+    <h1>KWM Shopping List</h1>
+    <h4>created by Eder Amata</h4>
+    <div class="accordion">
+        <h2>Kleidung</h2>
+        <div class="section">
+            <!--Hoodie-->
+            <div id="hoodie" class="undercategory">
+                <img src="imgs/hoodie.jpg" alt="FH Hoodie" width="300">
+                <p class="article">Super Hoodie</p> <!--ursprünglich wars Super Hoodie! aber das Rufzeichen nimmts ned :(-->
+                <p>Preis: <span class="price">20</span>€</p>
+                <input id="cart1" type="button" class="buttons" value="Warenkorb"/><br>
+            </div>
+
+            <!--Shirt-->
+            <div id="shirt" class="undercategory">
+                <img src="imgs/shirt.JPG" alt="FH Shirt" width="300">
+                <p class="article">FH Shirt</p>
+                <p>Preis: <span class="price">10</span>€</p>
+                <input id="cart2" type="button" class="buttons" value="Warenkorb"/><br>
+            </div>
+
+            <!--Grünes Poloshirt-->
+            <div id="poloshirt" class="undercategory">
+                <img src="imgs/poloshirt.jpg" alt="FH Poloshirt" width="300" height="175">
+                <p class="article">Grünes Poloshirt</p>
+                <p>Preis: <span clasS="price">15</span>€</p>
+                <input id="cart3" type="button" class="buttons" value="Warenkorb"/><br>
+            </div>
+
+        </div>
+
+        <h2>Campina</h2>
+        <div class="section">
+            <!--Cordon Bleu-->
+            <div id="cordon" class="undercategory">
+                <img src="imgs/cordon.jpg" alt="Campina Cordon Bleu" width="300">
+                <p class="article">Cordon Bleu</p>
+                <p>Preis: <span class="price">8</span>€</p>
+                <input id="cart4" type="button" class="buttons" value="Warenkorb"/><br>
+            </div>
+
+            <!--Spaghetti-->
+            <div id="spaghetti" class="undercategory">
+                <img src="imgs/spaghetti.jpg" alt="Campina Spaghetti" width="300">
+                <p class="article">Lecker Spaghetti</p>
+                <p>Preis: <span class="price">7</span>€</p>
+                <input id="cart5" type="button" class="buttons" value="Warenkorb"/><br>
+            </div>
+
+            <!--Salat-->
+            <div id="salad" class="undercategory">
+                <img src="imgs/salat.jpg" alt="Campina Salat" width="300">
+                <p class="article">Gesunder Salat</p>
+                <p>Preis: <span class="price">6</span>€</p>
+                <input id="cart6" type="button" class="buttons" value="Warenkorb"/><br>
+            </div>
+
+        </div>
+
+        <h2>Programme</h2>
+        <div class="section">
+            <!--Eclipse-->
+            <div id="eclipse" class="undercategory">
+                <img src="imgs/eclipse.jpg" alt="Programm Eclipse" width="200">
+                <p class="article">Eclipse</p>
+                <p>Preis: <span class="price">70</span>€</p>
+                <input id="cart7" type="button" class="buttons" value="Warenkorb"/><br>
+            </div>
+
+            <!--Adobe-->
+            <div id="adobe" class="undercategory">
+                <img src="imgs/adobe.jpg" alt="Programm Adobe" width="200">
+                <p class="article">Adobe</p>
+                <p>Preis: <span class="price">120</span>€</p>
+                <input id="cart8" type="button" class="buttons" value="Warenkorb"/><br>
+            </div>
+
+            <!--Videoscribe-->
+            <div id="videoscribe" class="undercategory">
+                <img src="imgs/videoscribe.jpeg" alt="Programm Videoscribe" width="300" height="200">
+                <p class="article">Spitzenprogramm Videoscribe</p>
+                <p>Preis: <span class="price">90</span>€</p>
+                <input id="cart9" type="button" class="buttons" value="Warenkorb"/><br>
+            </div>
+        </div>
+
+        <form method="post" action="#" name="shoppingCart">
+            <fieldset>
+                <legend>Warenkorb</legend>
+                <div id="shoppingCart"></div>
+                <p>Gesamtsumme: <span id="fullprice"></span>€</p>
+                <!--input id="add" type="button" class="buttons" value="Bestellen"/-->
+                <div id="buy"></div>
+            </fieldset>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="shopping.js"></script>
+</body>
+</html>
